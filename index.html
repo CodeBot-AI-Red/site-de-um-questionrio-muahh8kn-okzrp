@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Questionário Interativo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Questionário Interativo</h1>
+    <form id="quiz-form" novalidate>
+      <section id="question-section" aria-live="polite"></section>
+      <div class="navigation">
+        <button type="button" id="prev-btn" disabled>Anterior</button>
+        <button type="button" id="next-btn">Próxima</button>
+      </div>
+    </form>
+    <section id="result-section" hidden>
+      <h2>Resultado</h2>
+      <p id="score"></p>
+      <ul id="answers-list"></ul>
+      <button type="button" id="restart-btn">Refazer</button>
+    </section>
+  </main>
+
+  <script src="script.js" type="module"></script>
+</body>
+</html>
